@@ -1,0 +1,117 @@
+/* styles.module.css */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  text-align: center;
+  background-image: url('https://img.freepik.com/premium-photo/white-empty-room-with-cement-wall-tiles-lamp-tulip-valentine-s-day-new-year-3d-render_67041-203.jpg?size=626&ext=jpg&ga=GA1.2.65624105.1690470804&semt=ais');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  font-family: Verdana, sans-serif;
+}
+
+.heading {
+  font-size: 40px;
+  font-weight: 600;
+  color: #2c444e;
+}
+
+.form_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 800px;
+}
+
+.left {
+  flex: 1;
+}
+
+.img  {
+  max-width: 100%;
+  height: 350px;
+}
+
+.right {
+  flex: 1;
+  text-align: left;
+}
+
+.form_heading {
+  font-size: 25px;
+  font-weight: 400;
+  color: #2c444e;
+  margin-bottom: 30px;
+  
+}
+
+.input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  outline: none;
+ 
+  border-radius: 2px;
+  font-size: 13px;
+}
+
+.btn {
+  font-size: 18px;
+  font-weight: 500;
+  padding: 12px 25px;
+  color: white;
+  background-color: #ffc801; /* Yellow color for the button */
+  border-radius: 12px;
+  margin-top: 10px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  
+  transition: background-color 0.3s;
+}
+
+.text {
+  font-size: 14px;
+  color: #2c444e;
+  margin: 5px 0;
+}
+
+.text > a {
+  font-size: 16px;
+  font-weight: 500;
+  color: #ffc801;
+}
+
+.google_btn {
+  width: 230px;
+  height: 40px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  background-color: white;
+  box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2),
+    0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
+  font-size: 16px;
+  font-weight: 500;
+  margin: 20px 0;
+  color: #2c444e;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.google_icon {
+  width: 30px;
+  height: 30px;
+  object-fit: cover;
+}
+
+.google_btn > span {
+  margin-left: 10px;
+}

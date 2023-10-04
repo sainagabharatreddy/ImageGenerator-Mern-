@@ -1,0 +1,150 @@
+.services {
+    text-align: center;
+    padding: 40px 0;
+   
+    background-image: url('https://img.freepik.com/free-photo/luxury-white-clean-interior-room-with-window-shadow-lightinggenerative-ai_1258-165428.jpg');
+
+    background-size: cover;
+  
+    background-attachment: fixed;
+   
+  }
+  
+  .services h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #050505;
+  }
+  
+  .service-category {
+    margin: 20px 0;
+    opacity: 0;
+    transform: translateY(30px) rotate(0deg); 
+    transition: opacity 0.8s ease-in-out 0.3s, transform 0.8s ease-in-out 0.3s;
+  }
+  
+  .service-category h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #0a0909;
+  }
+  
+  .service-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+   
+  
+  }
+  
+  .service-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 500px;
+    margin: 0 auto 20px;
+    padding: 20px;
+    text-align: left;
+    background-image: url('https://img.freepik.com/free-photo/black-white-background_23-2150530946.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.8;
+    transition: transform 0.3s;
+  }.service-items:hover {
+    background-color: #fff;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 0 36px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 500px;
+    margin: 0 auto 20px;
+    padding: 20px;
+    text-align: left;
+    transition: transform 0.3s;
+  }
+  
+  .service-item h4 {
+    font-size: 20px;
+    margin: 0;
+    color: #333;
+  }
+  
+  .service-item p {
+    font-size: 16px;
+    color: #555;
+  }
+  
+ 
+  
+  /* Apply animations when entering the viewport */
+  @keyframes slideInFromLeft {
+    0% {
+      opacity: 0;
+      transform: translateX(-30px) rotate(0deg);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0) rotate(360deg);
+    }
+  }
+  
+  @keyframes slideInFromRight {
+    0% {
+      opacity: 0;
+      transform: translateX(30px) rotate(0deg);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0) rotate(360deg);
+    }
+  }
+  
+  @keyframes slideInFromTop {
+    0% {
+      opacity: 0;
+      transform: translateY(-30px) rotate(0deg);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0) rotate(360deg);
+    }
+  }
+  
+  @keyframes slideInFromBottom {
+    0% {
+      opacity: 0;
+      transform: translateY(30px) rotate(0deg);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0) rotate(360deg);
+    }
+  }
+  
+  /* Apply different animations to each service category */
+  .service-category:nth-child(odd) {
+    animation: slideInFromLeft 0.8s ease-in-out 0.5s both; /* Delayed animation */
+  }
+  
+  .service-category:nth-child(even) {
+    animation: slideInFromRight 0.8s ease-in-out 0.5s both; /* Delayed animation */
+  }
+  
+  .service-category:nth-child(3n + 1) {
+    animation: slideInFromTop 0.8s ease-in-out 0.5s both; /* Delayed animation */
+  }
+  
+  .service-category:nth-child(3n + 2) {
+    animation: slideInFromBottom 0.8s ease-in-out 0.5s both; /* Delayed animation */
+  }
+  
+  /* Responsive Styles */
+  @media screen and (max-width: 768px) {
+    .service-item {
+      width: 80%;
+    }
+  }
+  

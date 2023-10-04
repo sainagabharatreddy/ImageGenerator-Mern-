@@ -1,0 +1,112 @@
+/* Login.css */
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  height: 90vh;
+  background-image: url('https://img.freepik.com/premium-photo/white-empty-room-with-cement-wall-tiles-lamp-tulip-valentine-s-day-new-year-3d-render_67041-203.jpg?size=626&ext=jpg&ga=GA1.2.65624105.1690470804&semt=ais');
+background-size: cover;
+background-position: center;
+background-attachment: fixed;
+font-family: Verdana, sans-serif;
+
+}
+
+.heading {
+  font-size: 35px;
+  font-weight: bold;
+  color: #2c444e;
+  margin-bottom: 20px;
+}
+
+.form_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 800px;
+}
+
+.left {
+  flex: 1;
+}
+
+.img2 {
+  max-width: 100%;
+}
+
+.right {
+  flex: 1;
+  text-align: left;
+}
+
+.form_heading {
+  font-size: 25px;
+  font-weight: 400;
+  color: #2c444e;
+  margin-bottom: 30px;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+ 
+  border-radius: 5px;
+  color: #333; /* Text color for input fields */
+}
+.input5:hover{
+
+  border: 3px solid black;
+  color: black;
+  
+}
+.btn {
+  font-size: 18px;
+  font-weight: 500;
+  padding: 12px 25px;
+  color: white;
+  background-color: #ffc801; /* Yellow color for the button */
+  border-radius: 12px;
+  margin-top: 10px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  
+  transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.btn:hover {
+  background-color: #d68a06; /* Lighter yellow on hover */
+}
+
+.text {
+  font-size: 16px;
+  color: #333;
+}
+
+.google_btn {
+  background-color: #fff;
+  color: #333;
+  padding: 10px 20px;
+  font-size: 18px;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.google_icon {
+  max-width: 24px;
+  margin-right: 10px;
+}
+
+.message {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: bold;
+}

@@ -1,0 +1,59 @@
+/* src/components/BrandedExperience.css */
+
+.branded-experience {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    border: 3px solid black;
+  }
+  
+  .interior,
+  .exterior,
+  .product {
+    text-align: center;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .brand-stamp {
+    max-width: 100px; /* Adjust the size of the brand stamp images as needed */
+    margin-top: 10px;
+  }
+  
+  .experience-logo img {
+    max-width: 150px; /* Adjust the size of the logo as needed */
+    margin-top: 20px;
+  }
+  /* src/components/experience.css */
+
+/* Set a fixed width and height for all images */
+img {
+    width: 200px; /* Adjust the width as needed */
+    height: 200px; /* Adjust the height as needed */
+    max-width: 100%;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  /* Style for the brand stamp images */
+  .brand-stamp {
+    width: 100px; /* Adjust the width of brand stamp images as needed */
+    height: 100px; /* Adjust the height of brand stamp images as needed */
+    margin-top: 10px;
+  }
+  
+  /* Style for the "5 Years Experienced" logo */
+  .experience-logo img {
+    width: 150px; /* Adjust the width of the logo as needed */
+    height: auto;
+    margin-top: 20px;
+  }
+  
